@@ -32,8 +32,7 @@ pk = None
 
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(("10.0.0.22",9999))
-#server.bind(("10.111.36.185",9999))
+server.bind(("localhost",9999))
 
 server.listen()
 
