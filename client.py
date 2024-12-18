@@ -31,8 +31,7 @@ pk = None
 key = get_random_bytes(16)
 
 client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-#client.connect(("10.111.36.185",9999))
-client.connect(("10.0.0.22",9999))
+client.connect(("localhost",9999))
 
 #send public key to reciver(server) and encryted aes key for the message
 pk = rsa.PublicKey.load_pkcs1(client.recv(1024))
